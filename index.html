@@ -40,19 +40,19 @@
       pointer-events: none;
       z-index: 0;
       background:
-        radial-gradient(circle at  -5% 18%, rgba(90,56,32,0.26) 21.6vw, transparent 21.6vw),
-        radial-gradient(circle at 108%  8%, rgba(90,56,32,0.24) 20.4vw, transparent 20.4vw),
-        radial-gradient(circle at 105% 45%, rgba(90,56,32,0.22) 19.2vw, transparent 19.2vw),
-        radial-gradient(circle at  -4% 60%, rgba(90,56,32,0.25) 22.8vw, transparent 22.8vw),
-        radial-gradient(circle at  40% 55%, rgba(90,56,32,0.16) 14.4vw, transparent 14.4vw),
-        radial-gradient(circle at 106% 78%, rgba(90,56,32,0.24) 21.6vw, transparent 21.6vw),
-        radial-gradient(circle at  -3% 88%, rgba(90,56,32,0.23) 19.2vw, transparent 19.2vw),
-        radial-gradient(circle at  72% 20%, rgba(90,56,32,0.18) 15.6vw, transparent 15.6vw),
-        radial-gradient(circle at  20% 35%, rgba(90,56,32,0.15) 13.2vw, transparent 13.2vw),
-        radial-gradient(circle at  55% 80%, rgba(90,56,32,0.17) 14.4vw, transparent 14.4vw),
-        radial-gradient(circle at  85% 35%, rgba(90,56,32,0.14) 13.2vw, transparent 13.2vw),
-        radial-gradient(circle at  15% 75%, rgba(90,56,32,0.16) 14.4vw, transparent 14.4vw),
-        radial-gradient(circle at  65% 48%, rgba(90,56,32,0.13)   12vw, transparent   12vw);
+        radial-gradient(circle at  -5% 18%, rgba(90,56,32,0.23) 21.6vw, transparent 21.6vw),
+        radial-gradient(circle at 108%  8%, rgba(90,56,32,0.22) 20.4vw, transparent 20.4vw),
+        radial-gradient(circle at 105% 45%, rgba(90,56,32,0.20) 19.2vw, transparent 19.2vw),
+        radial-gradient(circle at  -4% 60%, rgba(90,56,32,0.23) 22.8vw, transparent 22.8vw),
+        radial-gradient(circle at  40% 55%, rgba(90,56,32,0.14) 14.4vw, transparent 14.4vw),
+        radial-gradient(circle at 106% 78%, rgba(90,56,32,0.22) 21.6vw, transparent 21.6vw),
+        radial-gradient(circle at  -3% 88%, rgba(90,56,32,0.21) 19.2vw, transparent 19.2vw),
+        radial-gradient(circle at  72% 20%, rgba(90,56,32,0.16) 15.6vw, transparent 15.6vw),
+        radial-gradient(circle at  20% 35%, rgba(90,56,32,0.14) 13.2vw, transparent 13.2vw),
+        radial-gradient(circle at  55% 80%, rgba(90,56,32,0.15) 14.4vw, transparent 14.4vw),
+        radial-gradient(circle at  85% 35%, rgba(90,56,32,0.13) 13.2vw, transparent 13.2vw),
+        radial-gradient(circle at  15% 75%, rgba(90,56,32,0.14) 14.4vw, transparent 14.4vw),
+        radial-gradient(circle at  65% 48%, rgba(90,56,32,0.12)   12vw, transparent   12vw),
     }
 
     /* ===== ヘッダー ===== */
@@ -169,6 +169,24 @@
       width: 210px;
       height: 142px;
       filter: drop-shadow(2px 4px 8px rgba(100,60,20,0.18));
+    }
+
+    /* ヒーロー内の追加円形 */
+    .hero-dot {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .hero-dot-1 {
+      width: 15vw; height: 15vw;
+      left: 6%; top: 15%;
+      background: rgba(90,56,32,0.22);
+    }
+    .hero-dot-2 {
+      width: 13vw; height: 13vw;
+      right: 14%; bottom: 18%;
+      background: rgba(90,56,32,0.20);
     }
 
     /* ===== セクション共通 ===== */
@@ -499,6 +517,8 @@
 
   <!-- ===== ヒーロー ===== -->
   <section class="hero">
+    <div class="hero-dot hero-dot-1"></div>
+    <div class="hero-dot hero-dot-2"></div>
     <div class="hero-inner">
       <div class="hero-badge">✿ HANDMADE POUCH ✿</div>
       <div class="bears">
